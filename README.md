@@ -117,7 +117,7 @@ Assim como na Matemática, usamos vários operadores em uma mesma expressão. Pa
 | relational     | `<` `>` `<=` `>=`    |
 | equality       | `==` `!=`            |
 | logical AND    | `&&`                 |
-| logical OR     | `||`                 |
+| logical OR     | ||                 |
 | ternary        | `? :`                |
 | assignment     | `=` `+=` `-=` `*=` `/=` `%=` |
 
