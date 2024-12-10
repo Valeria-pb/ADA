@@ -97,7 +97,27 @@ Assim como temos os operadores matemáticos da aritmética, álgebra, trigonomet
 
 ## Operadores Unários
 Existem variações desses operadores que encurtam as expressões. Por exemplo:
-```java
+
 int contador = 0;
-contador = contador + 1;
+contador = contador + 1; // outras formas : contador++ ou ++contador
+## Operador Mod
+Um operador aritmético especial é o mod (%), que informa o "resto da divisão".
+int resultado = 3 % 2; // resultado = 1
+
+## Precedência de Operadores
+Assim como na Matemática, usamos vários operadores em uma mesma expressão. Para que o resultado não nos surpreenda, precisamos conhecer a precedência dos operadores.
+
+|Operadores|	Precedência|
+| postfix	| exp++ exp--|
+| unary |	++exp --exp +exp -exp ~ !|
+|multiplicative	| * / %|
+|additive| 	+ -|
+| relational | < > <= >= |
+| equality |	== != |
+| logical | AND	&&|
+| logical | OR |`		`
+| ternary	| ? : |
+| assignment |	= += -= *= /= %=|
+
+
 
