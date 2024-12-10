@@ -27,8 +27,46 @@ A configuração do ambiente Java envolve baixar a JDK, configurar a variável d
 
 Com essas ferramentas e configurações, você está pronto para começar a desenvolver aplicações em Java.
 - [Documentação do JAVA SE](https://www.oracle.com/java/technologies/javase-documentation.html)
--[Download JDK](https://www.oracle.com/java/technologies/downloads/)
--[Configuração da variável de ambiente](https://www.java.com/pt-BR/download/help/path_pt-br.html)
+- [Download JDK](https://www.oracle.com/java/technologies/downloads/)
+- [Configuração da variável de ambiente](https://www.java.com/pt-BR/download/help/path_pt-br.html)
 - [Download IntelliJ](https://www.jetbrains.com/pt-br/idea/download/)
 - [Java - história e conceitos](https://www.devmedia.com.br/java-historia-e-principais-conceitos/25178)
-- [Java SE - documentação](https://www.oracle.com/java/technologies/javase-documentation.html)  
+- [Java SE - documentação](https://www.oracle.com/java/technologies/javase-documentation.html)
+
+## Variáveis e Tipos
+Java é uma linguagem fortemente tipada, o que significa que cada variável deve ter um tipo associado, definindo os valores que podem ser armazenados. Existem oito tipos primitivos: quatro para números inteiros, dois para números de ponto flutuante, um para caracteres (Unicode) e um para valores lógicos (verdadeiro ou falso).
+
+### Tipos Primitivos
+- **Inteiros**: `byte`, `short`, `int`, `long`
+- **Ponto Flutuante**: `float`, `double`
+- **Caractere**: `char`
+- **Lógico**: `boolean`
+
+### Variáveis
+Variáveis armazenam valores e são declaradas com um tipo seguido pelo nome. Exemplo:
+
+int age = 22;
+
+Se não inicializadas, recebem valores padrão.
+
+### Strings
+Strings são sequências de caracteres imutáveis, declaradas entre aspas duplas:
+
+String s = "this is a string";
+
+
+### Constantes
+Constantes são valores fixos e imutáveis, declaradas com o modificador `final`:
+
+final int QUANTIDADE_TENTATIVAS = 3;
+
+
+### Enums
+Enums representam valores finitos, como dias da semana:
+
+public enum DayOfWeek {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+
+Esses conceitos são fundamentais para a programação em Java, permitindo a criação de código claro e eficiente.
