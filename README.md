@@ -1,6 +1,6 @@
 
 # ADA
-## Coding Tank - Desenvolva+
+## Coding Tank / Desenvolva+
 Repositório para o resumo de estudos do Programa Desenvolva + e Meli.
 
 ### Paradigmas de programação
