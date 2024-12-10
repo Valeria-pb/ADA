@@ -104,20 +104,23 @@ contador = contador + 1; // outras formas : contador++ ou ++contador
 Um operador aritmético especial é o mod (%), que informa o "resto da divisão".
 int resultado = 3 % 2; // resultado = 1
 
-## Precedência de Operadores
+# Precedência de Operadores em Java
+
 Assim como na Matemática, usamos vários operadores em uma mesma expressão. Para que o resultado não nos surpreenda, precisamos conhecer a precedência dos operadores.
 
-|Operadores|	Precedência|
-| postfix	| exp++ exp--|
-| unary |	++exp --exp +exp -exp ~ !|
-|multiplicative	| * / %|
-|additive| 	+ -|
-| relational | < > <= >= |
-| equality |	== != |
-| logical | AND	&&|
-| logical | OR |`		`
-| ternary	| ? : |
-| assignment |	= += -= *= /= %=|
+| Operadores     | Precedência          |
+|----------------|----------------------|
+| postfix        | `exp++` `exp--`      |
+| unary          | `++exp` `--exp` `+exp` `-exp` `~` `!` |
+| multiplicative | `*` `/` `%`          |
+| additive       | `+` `-`              |
+| relational     | `<` `>` `<=` `>=`    |
+| equality       | `==` `!=`            |
+| logical AND    | `&&`                 |
+| logical OR     | `||`                 |
+| ternary        | `? :`                |
+| assignment     | `=` `+=` `-=` `*=` `/=` `%=` |
+
 
 
 
