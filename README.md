@@ -1,3 +1,4 @@
+
 # ADA
 ## Coding Tank - Desenvolva+
 Repositório para o resumo de estudos do Programa Desenvolva + e Meli.
@@ -120,6 +121,118 @@ Assim como na Matemática, usamos vários operadores em uma mesma expressão. Pa
 | logical OR     | ||                 |
 | ternary        | `? :`                |
 | assignment     | `=` `+=` `-=` `*=` `/=` `%=` |
+
+# Definindo o tamanho dos métodos
+### Pequenas
+"A primeira regra para funções é que elas devem ser pequenas. A segunda é que devem ser ainda menores." (Robert C. Martin)
+
+Não existe um estudo que comprove a eficiência de métodos pequenos, que eles sejam mais rápidos ou melhores, ou que gerem menos erros. O fato é que ao restringir ao máximo sua responsabilidade, o código fica mais coeso e, por consequência, mais legível.
+
+# Estruturas de Controle de Fluxo em Java
+
+Em Java, temos blocos especiais que controlam o fluxo de execução do nosso programa. Esses blocos podem ser executados de acordo com uma condição definida (if-then, if-then-else, switch) ou repetidamente (for, while, do-while).
+
+## Estruturas Condicionais
+
+### if-then
+A estrutura mais simples é o bloco `if-then`. O conteúdo deste bloco será executado apenas quando a condição definida for `true`.
+
+```java
+void applyBrakes() {
+    if (isMoving) { 
+        currentSpeed--;
+    }
+}
+### if-then-else
+Para tratar o caso contrário, usamos a palavra-chave ```else.
+void applyBrakes() {
+    if (isMoving) {
+        currentSpeed--;
+    } else {
+        System.err.println("The bicycle has already stopped!");
+    }
+}
+### if-then-else encadeado
+Estruturas if-then-else podem ser encadeadas usando else if.
+class IfElseDemo {
+    public static void main(String[] args) {
+        int testscore = 76;
+        char grade;
+        if (testscore >= 90) {
+            grade = 'A';
+        } else if (testscore >= 80) {
+            grade = 'B';
+        } else if (testscore >= 70) {
+            grade = 'C';
+        } else if (testscore >= 60) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+        System.out.println("Grade = " + grade);
+    }
+}
+
+### switch
+A estrutura switch é usada quando desejamos realizar determinado comportamento de acordo com o valor contido em uma variável.
+public class SwitchDemo {
+    public static void main(String[] args) {
+        int month = 8;
+        String monthString;
+        switch (month) {
+            case 1:  monthString = "January"; break;
+            case 2:  monthString = "February"; break;
+            case 3:  monthString = "March"; break;
+            case 4:  monthString = "April"; break;
+            case 5:  monthString = "May"; break;
+            case 6:  monthString = "June"; break;
+            case 7:  monthString = "July"; break;
+            case 8:  monthString = "August"; break;
+            case 9:  monthString = "September"; break;
+            case 10: monthString = "October"; break;
+            case 11: monthString = "November"; break;
+            case 12: monthString = "December"; break;
+            default: monthString = "Invalid month"; break;
+        }
+        System.out.println(monthString);
+    }
+}
+
+A estrutura switch permite variáveis dos tipos primitivos byte, short, char e int, além de Enum e String.
+
+### switch com múltiplos casos
+Para cenários onde temos a mesma resposta para mais de uma entrada, usamos múltiplos casos.
+class SwitchDemo2 {
+    public static void main(String[] args) {
+        int month = 2;
+        int year = 2000;
+        int numDays = 0;
+        switch (month) {
+            case 1: case 3: case 5:
+            case 7: case 8: case 10:
+            case 12:
+                numDays = 31;
+                break;
+            case 4: case 6:
+            case 9: case 11:
+                numDays = 30;
+                break;
+            case 2:
+                if (((year % 4 == 0) && 
+                     !(year % 100 == 0))
+                     || (year % 400 == 0)) // checking for leap year
+                    numDays = 29;
+                else
+                    numDays = 28;
+                break;
+            default:
+                System.out.println("Invalid month.");
+                break;
+        }
+        System.out.println("Number of Days = " + numDays);
+    }
+}
+
 
 
 
