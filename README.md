@@ -69,4 +69,35 @@ public enum DayOfWeek {
 }
 
 
-Esses conceitos são fundamentais para a programação em Java, permitindo a criação de código claro e eficiente.
+## Operadores e Precedência em Java
+
+Assim como temos os operadores matemáticos da aritmética, álgebra, trigonometria, cálculo etc., o Java define símbolos especiais para realizar operações com nossas variáveis. Esses operadores podem tomar um, dois ou três termos e agir sobre eles.
+
+## Tipos de Operadores
+
+### Aritméticos
+- Soma (`+`)
+- Subtração (`-`)
+- Multiplicação (`*`)
+- Divisão (`/`)
+
+### Lógicos
+- Negação (`!`)
+- E (`&&`)
+- OU (`||`)
+
+### Relacionais
+- Maior que (`>`)
+- Menor que (`<`)
+- Igual (`==`)
+- Diferente (`!=`)
+
+### Ternário
+- Condicional (`? :`)
+
+## Operadores Unários
+Existem variações desses operadores que encurtam as expressões. Por exemplo:
+```java
+int contador = 0;
+contador = contador + 1;
+
